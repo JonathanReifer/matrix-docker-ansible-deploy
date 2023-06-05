@@ -121,7 +121,7 @@
     mode: 0644
 
 - name: Ensure Synapse container network is created
-  community.general.docker_network:
+  community.docker.docker_network:
     name: "{{ matrix_synapse_container_network }}"
     driver: bridge
 
